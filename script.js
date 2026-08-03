@@ -14,7 +14,7 @@ const products = [
         id: 1,
         title: "9 to 5 Elite",
         tag: "MEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785194/Elite_xeaxll.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         prices: {
             "50ml": 1500,
