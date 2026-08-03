@@ -14,7 +14,7 @@ const products = [
         id: 1,
         title: "9 to 5 Elite",
         tag: "MEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/9_to_5_Elite_m1tphp.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785194/Elite_xeaxll.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         prices: {
             "50ml": 1500,
@@ -25,7 +25,7 @@ const products = [
         id: 2,
         title: "Tommy Chérie",
         tag: "UNISEX",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Tommy_Ch%C3%A9rie_lw9x8v.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784447/Tommy_ngvysr.png",
         description: "A vibrant blend of citrus, apple blossom, and fresh wildflowers, softened by mint and clean woody notes for a youthful, refreshing, and effortlessly elegant scent.",
         prices: {
             "50ml": 1500,
@@ -36,7 +36,7 @@ const products = [
         id: 3,
         title: "THE GENTLEMAN",
         tag: "MEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/THE_GENTLEMAN_mcy6fh.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784445/gentle_k3cndr.png",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: {
             "50ml": 1500,
@@ -58,7 +58,7 @@ const products = [
         id: 5,
         title: "Starry Times",
         tag: "WOMEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Starry_Times_ac3nyd.webp",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784457/Starry_Time_aulaux.png",
         description: "A creamy bouquet of jasmine, velvety tuberose, and delicate Rangoon Creeper, creating a soft floral scent that is elegant, fresh, and irresistibly feminine.",
         prices: {
             "50ml": 1500,
@@ -69,7 +69,7 @@ const products = [
         id: 6,
         title: "Flora & Silk",
         tag: "WOMEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Flora_Silk_kqchc4.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784672/Flora_q8e6l7.png",
         description: "A fresh fusion of sweet orange, crisp apple, and aromatic herbs, layered with lavender, juniper, patchouli, and amber for a clean, sensual, and confidently masculine signature.",
         prices: {
             "50ml": 1500,
