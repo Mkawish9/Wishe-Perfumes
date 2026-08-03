@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Dark CSS Link -->
+    <!-- Custom CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,10 +20,8 @@
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link active">Home</a></li>
                 <li><a href="#products" class="nav-link">Fragrance</a></li>
-                <li><a href="#" class="nav-link">Watches</a></li>
-                <li><a href="#" class="nav-link">Objects</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-cart" onclick="toggleCart()">
                 <i class="fas fa-shopping-bag"></i>
@@ -35,21 +33,19 @@
     <!-- Header / Hero Section -->
     <header class="hero-section">
         <div class="hero-content">
-            <!-- <h1><b>WISHÉ Fragrances</b> </h1> -->
             <h2>The Art of Becoming Unforgettable.</h2>
-                    <p>creates more than perfumes—it creates invisible masterpieces that reflect confidence, character, and timeless elegance.</p>
-        </div>
-        <div>
-            
+            <p>creates more than perfumes—it creates invisible masterpieces that reflect confidence, character, and timeless elegance.</p>
         </div>
     </header>
 
     <!-- Main Content Container -->
     <div class="container" id="products">
         <div class="section-header">
-            <h2>WISHÉ Fragrances </h2>
-    <br><br>
-            <span class="sub-title">is more than a fragrance brand—it's an expression of identity, confidence, and timeless sophistication. Every scent is thoughtfully crafted to capture emotions, inspire unforgettable moments, and become a signature that speaks before you do. We believe true luxury isn't just worn; it's experienced. From the very first note to the lasting impression it leaves behind, each fragrance is designed to elevate your presence, awaken your senses, and surround you with an aura of elegance that lingers long after you've left the room. At WISHÉ Fragrances, every bottle tells a story, every scent creates a memory, and every spray becomes a reflection of your unique personality.</span>
+            <h2>WISHÉ Fragrances</h2>
+            <br>
+            <span class="sub-title">WISHÉ Fragrances is more than a perfume brand—it's a symbol of elegance, confidence, and individuality. Each fragrance is carefully crafted to evoke emotions, create unforgettable memories, and leave a lasting impression. From the first spray to the final note, every scent reflects timeless luxury and your unique personality. Wear your story, embrace your presence, and let your fragrance speak for you.
+                Discover our exclusive Fragrances collection, crafted for timeless elegance. We also create custom perfumes tailored to your unique style and preferences.
+            </span>
         </div>
 
         <!-- Product Grid -->
@@ -58,9 +54,61 @@
         </div>
     </div>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About WISHÉ</h2>
+            <p>
+                Founded on the belief that a scent is the most powerful accessory one can wear, <strong>WISHÉ</strong> curates exceptional luxury fragrances designed to leave a mark. Our blends merge rare ingredients with modern sophistication, offering a signature presence for every individual milestone.
+            </p>
+            <p>
+                Whether you are stepping into a boardroom or an evening soirée, WISHÉ translates your persona into an invisible aura of absolute confidence and timeless allure.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h2>Get in Touch</h2>
+                <p>Have a query regarding custom blends or orders? Reach out or send us a message directly.</p>
+            </div>
+            
+            <div class="contact-row">
+                <!-- Office Location & Info -->
+                <div class="contact-info-box">
+                    <h3>Contact & Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan.</p>
+                    <p><i class="fas fa-phone-alt"></i> +92 335 4935544</p>
+                    <p><i class="fas fa-envelope"></i> wishefragrance@gmail.com</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <form id="contactForm" onsubmit="sendContactToWhatsApp(event)">
+                        <div class="form-group">
+                            <label>YOUR NAME</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>PHONE NUMBER</label>
+                            <input type="text" id="contactPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>YOUR MESSAGE</label>
+                            <textarea id="contactMessage" required rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="whatsapp-send-btn">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 BYREDO Inspiration. All Rights Reserved. Secure Encrypted Checkout.</p>
+        <p>&copy; 2026 WISHÉ Fragrance.</p>
     </footer>
 
     <!-- Custom JavaScript Link -->
