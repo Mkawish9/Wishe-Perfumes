@@ -17,8 +17,8 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         prices: {
-            "50ml": 1500,
-            "100ml": 2500
+            "50ml": 1800,
+            "100ml": 3000
         }
     },
     {
@@ -50,8 +50,8 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
         description: "A luxurious fusion of dark oud, velvety rose, and rich saffron, wrapped in smoky incense and resinous woods for a bold, mysterious, and unforgettable presence.",
         prices: {
-            "50ml": 1500,
-            "100ml": 2500
+            "50ml": 1800,
+            "100ml": 3000
         }
     },
     {
@@ -105,10 +105,33 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Pure_Imagination_b9ulpt.webp",
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
         prices: {
+            "50ml": 1800,
+            "100ml": 3000
+        }
+    },
+    {
+        id: 10,
+        title: "GOLDEN HOUR",
+        tag: "UNISEX",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785788084/Golden_hour_utjcqm.png",
+        description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
+        prices: {
+            "50ml": 1500,
+            "100ml": 2500
+        }
+    },
+    {
+        id: 11,
+        title: "Chrystal Breeze",
+        tag: "UNISEX",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785789899/Chrystal_z9uv0i.png",
+        description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
+        prices: {
             "50ml": 1500,
             "100ml": 2500
         }
     }
+    
 ];
 
 let cart = []; // Multiple items array
