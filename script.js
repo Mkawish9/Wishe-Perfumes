@@ -13,7 +13,7 @@ const products = [
     {
         id: 1,
         title: "9 to 5 Elite",
-        tag: "Bestseller",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/9_to_5_Elite_m1tphp.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         prices: {
@@ -24,7 +24,7 @@ const products = [
     {
         id: 2,
         title: "Tommy Chérie",
-        tag: "New Arrival",
+        tag: "UNISEX",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Tommy_Ch%C3%A9rie_lw9x8v.png",
         description: "A vibrant blend of citrus, apple blossom, and fresh wildflowers, softened by mint and clean woody notes for a youthful, refreshing, and effortlessly elegant scent.",
         prices: {
@@ -35,7 +35,7 @@ const products = [
     {
         id: 3,
         title: "THE GENTLEMAN",
-        tag: "Limited",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/THE_GENTLEMAN_mcy6fh.png",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: {
@@ -46,7 +46,7 @@ const products = [
     {
         id: 4,
         title: "Nuit de Oud",
-        tag: "Popular",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
         description: "A luxurious fusion of dark oud, velvety rose, and rich saffron, wrapped in smoky incense and resinous woods for a bold, mysterious, and unforgettable presence.",
         prices: {
@@ -57,7 +57,7 @@ const products = [
     {
         id: 5,
         title: "Starry Times",
-        tag: "Fresh",
+        tag: "WOMEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Starry_Times_ac3nyd.webp",
         description: "A creamy bouquet of jasmine, velvety tuberose, and delicate Rangoon Creeper, creating a soft floral scent that is elegant, fresh, and irresistibly feminine.",
         prices: {
@@ -68,7 +68,7 @@ const products = [
     {
         id: 6,
         title: "Flora & Silk",
-        tag: "Exclusive",
+        tag: "WOMEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Flora_Silk_kqchc4.png",
         description: "A fresh fusion of sweet orange, crisp apple, and aromatic herbs, layered with lavender, juniper, patchouli, and amber for a clean, sensual, and confidently masculine signature.",
         prices: {
@@ -79,7 +79,7 @@ const products = [
     {
         id: 7,
         title: "Asset 9",
-        tag: "Sweet",
+        tag: "UNISEX",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Asset_9_nu9amu.webp",
         description: "A fresh fusion of grapefruit, rosemary, and cardamom, blended with smooth cedarwood and suede for a timeless, masculine, and effortlessly sophisticated scent.",
         prices: {
@@ -90,7 +90,7 @@ const products = [
     {
         id: 8,
         title: "Nightshade Pulse",
-        tag: "Trending",
+        tag: "UNISEX",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Nightshade_Pulse_n99ejn.webp",
         description: "A rich fusion of saffron, cardamom, candied dates, and burnt caramel, blended with dark oud, leather, cacao, and Madagascar vanilla for a luxurious, seductive, and unforgettable aroma.",
         prices: {
@@ -101,7 +101,7 @@ const products = [
     {
         id: 9,
         title: "Pure Imagination",
-        tag: "Luxury",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Pure_Imagination_b9ulpt.webp",
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
         prices: {
