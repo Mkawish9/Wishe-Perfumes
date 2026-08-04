@@ -17,7 +17,7 @@ const products = [
         tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
-        prices: { "50ml": 1500, "100ml": 2500 },
+        prices: { "50ml": 1800, "100ml": 3000 },
         reviews: [
             { name: "Ahmed Ali", rating: 5, comment: "Amazing lasting and very elite smell! Highly recommended. Zaroor try karein." },
             { name: "Bilal", rating: 4, comment: "Good everyday office wear fragrance, Excellent quality." }
@@ -29,7 +29,7 @@ const products = [
         tag: "WOMEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784447/Tommy_ngvysr.png",
         description: "A vibrant blend of citrus, apple blossom, and fresh wildflowers, softened by mint and clean woody notes for a youthful, refreshing, and effortlessly elegant scent.",
-        prices: { "50ml": 1500, "100ml": 2500 },
+        prices: { "50ml": 1600, "100ml": 2500 },
         reviews: [
             { name: "Nimra", rating: 5, comment: "Super fresh and floral scent, absolutely love it! Will buy again Insha-Allah" }
         ]
@@ -51,7 +51,7 @@ const products = [
         tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
         description: "A luxurious fusion of dark oud, velvety rose, and rich saffron, wrapped in smoky incense and resinous woods for a bold, mysterious, and unforgettable presence.",
-        prices: { "50ml": 1500, "100ml": 2500 },
+        prices: { "50ml": 1800, "100ml": 3000 },
         reviews: [
             { name: "Hamza", rating: 5, comment: "Strong oud notes, This perfume exceeded my expectations.Yeh perfume meri umeed se bhi zyada acha nikla." }
         ]
@@ -75,7 +75,7 @@ const products = [
         description: "A fresh fusion of sweet orange, crisp apple, and aromatic herbs, layered with lavender, juniper, patchouli, and amber for a clean, sensual, and confidently masculine signature.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Zain", rating: 5, comment: "Smooth aroma and great projection." }
+            { name: "Maheen", rating: 5, comment: "Smooth aroma and great projection, Definitely recommend." }
         ]
     },
     {
@@ -106,9 +106,9 @@ const products = [
         tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Pure_Imagination_b9ulpt.webp",
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
-        prices: { "50ml": 1500, "100ml": 2500 },
+        prices: { "50ml": 1800, "100ml": 3000 },
         reviews: [
-            { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
         ]
     },{
         id: 10,
@@ -118,7 +118,7 @@ const products = [
         description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
         ]
     },
     {
@@ -129,7 +129,7 @@ const products = [
         description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
         ]
     }
 ];
