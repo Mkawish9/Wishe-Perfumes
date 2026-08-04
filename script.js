@@ -14,64 +14,64 @@ const products = [
     {
         id: 1,
         title: "9 to 5 Elite",
-        tag: "Bestseller",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/9_to_5_Elite_m1tphp.png",
+        tag: "MEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Ahmed", rating: 5, comment: "Amazing lasting and very elite smell!" },
-            { name: "Bilal", rating: 4, comment: "Good everyday office wear fragrance." }
+            { name: "Ahmed Ali", rating: 5, comment: "Amazing lasting and very elite smell! Highly recommended. Zaroor try karein." },
+            { name: "Bilal", rating: 4, comment: "Good everyday office wear fragrance, Excellent quality." }
         ]
     },
     {
         id: 2,
         title: "Tommy Chérie",
-        tag: "New Arrival",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Tommy_Ch%C3%A9rie_lw9x8v.png",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784447/Tommy_ngvysr.png",
         description: "A vibrant blend of citrus, apple blossom, and fresh wildflowers, softened by mint and clean woody notes for a youthful, refreshing, and effortlessly elegant scent.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Sara", rating: 5, comment: "Super fresh and floral scent, absolutely love it!" }
+            { name: "Nimra", rating: 5, comment: "Super fresh and floral scent, absolutely love it! Will buy again Insha-Allah" }
         ]
     },
     {
         id: 3,
         title: "THE GENTLEMAN",
-        tag: "Limited",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/THE_GENTLEMAN_mcy6fh.png",
+        tag: "MEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784445/gentle_k3cndr.png",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Usman", rating: 5, comment: "True gentleman vibe. Classy!" }
+            { name: "Mohammad Usman ", rating: 5, comment: "True gentleman vibe. Highly impressed for its longevity." }
         ]
     },
     {
         id: 4,
         title: "Nuit de Oud",
-        tag: "Popular",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
         description: "A luxurious fusion of dark oud, velvety rose, and rich saffron, wrapped in smoky incense and resinous woods for a bold, mysterious, and unforgettable presence.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Hamza", rating: 5, comment: "Strong oud notes, great for evenings." }
+            { name: "Hamza", rating: 5, comment: "Strong oud notes, This perfume exceeded my expectations.Yeh perfume meri umeed se bhi zyada acha nikla." }
         ]
     },
     {
         id: 5,
         title: "Starry Times",
-        tag: "Fresh",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Starry_Times_ac3nyd.webp",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784457/Starry_Time_aulaux.png",
         description: "A creamy bouquet of jasmine, velvety tuberose, and delicate Rangoon Creeper, creating a soft floral scent that is elegant, fresh, and irresistibly feminine.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Ayesha", rating: 4, comment: "Very elegant and sweet floral touch." }
+            { name: "Ayesha Mughal", rating: 5, comment: "Very elegant and sweet floral touch,The fragrance stays fresh for hours." }
         ]
     },
     {
         id: 6,
         title: "Flora & Silk",
-        tag: "Exclusive",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Flora_Silk_kqchc4.png",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784672/Flora_q8e6l7.png",
         description: "A fresh fusion of sweet orange, crisp apple, and aromatic herbs, layered with lavender, juniper, patchouli, and amber for a clean, sensual, and confidently masculine signature.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
@@ -81,18 +81,18 @@ const products = [
     {
         id: 7,
         title: "Asset 9",
-        tag: "Sweet",
+        tag: "UNISEX",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Asset_9_nu9amu.webp",
         description: "A fresh fusion of grapefruit, rosemary, and cardamom, blended with smooth cedarwood and suede for a timeless, masculine, and effortlessly sophisticated scent.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Farhan", rating: 5, comment: "Worth every rupee!" }
+            { name: "Farhan", rating: 5, comment: "Worth every rupee! Absolutely love this fragrance,Dil se pasand aya, sab ko recommend karunga. " }
         ]
     },
     {
         id: 8,
         title: "Nightshade Pulse",
-        tag: "Trending",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Nightshade_Pulse_n99ejn.webp",
         description: "A rich fusion of saffron, cardamom, candied dates, and burnt caramel, blended with dark oud, leather, cacao, and Madagascar vanilla for a luxurious, seductive, and unforgettable aroma.",
         prices: { "50ml": 1500, "100ml": 2500 },
@@ -103,9 +103,30 @@ const products = [
     {
         id: 9,
         title: "Pure Imagination",
-        tag: "Luxury",
+        tag: "MEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Pure_Imagination_b9ulpt.webp",
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
+        prices: { "50ml": 1500, "100ml": 2500 },
+        reviews: [
+            { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
+    },{
+        id: 10,
+        title: "GOLDEN HOUR",
+        tag: "UNISEX",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785788084/Golden_hour_utjcqm.png",
+        description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
+        prices: { "50ml": 1500, "100ml": 2500 },
+        reviews: [
+            { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
+    },
+    {
+        id: 11,
+        title: "Chrystal Breeze",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785789899/Chrystal_z9uv0i.png",
+        description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
             { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
