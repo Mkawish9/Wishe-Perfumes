@@ -187,7 +187,7 @@ body {
     font-size: 0.85rem;
     color: #666;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     flex-grow: 1;
 }
 
@@ -249,6 +249,88 @@ body {
 
 .buy-btn:hover {
     background: #333;
+}
+
+/* Reviews Section Styling */
+.reviews-section {
+    margin-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 12px;
+}
+
+.reviews-toggle-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviews-container {
+    margin-top: 10px;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.review-item {
+    font-size: 0.78rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.review-form {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.review-form input, .review-form textarea {
+    padding: 6px 8px;
+    font-size: 0.78rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.star-rating-select {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.star-rating-select .selected {
+    color: #f39c12;
+}
+
+.submit-review-btn {
+    background: #121212;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 /* About Section */
