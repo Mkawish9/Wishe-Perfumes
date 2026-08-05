@@ -42,7 +42,8 @@ const products = [
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Mohammad Usman ", rating: 5, comment: "True gentleman vibe. Highly impressed for its longevity." }
+            { name: "Mohammad Usman ", rating: 5, comment: "True gentleman vibe. Highly impressed for its longevity." },
+
         ]
     },
     {
@@ -64,7 +65,9 @@ const products = [
         description: "A creamy bouquet of jasmine, velvety tuberose, and delicate Rangoon Creeper, creating a soft floral scent that is elegant, fresh, and irresistibly feminine.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Ayesha Mughal", rating: 5, comment: "Very elegant and sweet floral touch,The fragrance stays fresh for hours." }
+            { name: "Ayesha Mughal", rating: 5, comment: "Very elegant and sweet floral touch,The fragrance stays fresh for hours."},
+            { name: "Fiza", rating: 5, comment: "The fragrances are really very nice and long lasting. Everyone asks about which perfume I am wearing."},
+
         ]
     },
     {
@@ -131,7 +134,55 @@ const products = [
         reviews: [
             // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
         ]
+    },
+    {
+        id: 12,
+        title: "IMPRESSION OF POISON BY DIOR",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953575/Poison_jdj44l.webp",
+        description: "A captivating blend of rich amber and woody notes. Wrapped in sweet vanilla with a touch of wild berries, Crafted to leave an unforgettable impression.",
+        prices: { "50ml": 1400, "100ml": 2500 },
+        reviews: [
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
+    },
+    {
+        id: 13,
+        title: "INSPIRED BY OFFICE FOR MEN",
+        tag: "MEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953588/Ofc_for_men_wgfgpx.webp",
+        description: "A refreshing burst of bergamot meets delicate jasmine. Balanced with rich woody notes for timeless elegance. A fragrance that defines confidence and sophistication.",
+        prices: { "50ml": 1800, "100ml": 3000 },
+        reviews: [
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
+    },
+    {
+        id: 14,
+        title: "IMPRESSION OF BLOOM BY GUCCI",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785955759/Gucci_bloom_u7t0li.webp",
+        description: "Blooming jasmine meets the richness of tuberose. Soft white florals create a fresh, luxurious aura. Crafted for effortless elegance and everyday sophistication.",
+        prices: { "50ml": 1500, "100ml": 2500 },
+        reviews: [
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
+    },
+    {
+        id: 15,
+        title: "IMPRESSION OF OMBRE NOMADE BY LV",
+        tag: "UNISEX",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953593/Ombre_Nomade_lukmzr.webp",
+        description: "A rich fusion of precious agarwood and smooth leather. Enhanced with warm amber and deep oud accords. A bold, luxurious fragrance with an unforgettable presence.",
+        prices: { "50ml": 1700, "100ml": 3000 },
+        reviews: [
+            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+        ]
     }
+
+
+
+    
 ];
 
 let cart = []; 
