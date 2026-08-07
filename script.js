@@ -38,7 +38,7 @@ const products = [
         id: 3,
         title: "THE GENTLEMAN",
         tag: "MEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784445/gentle_k3cndr.png",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1786118682/The_gentle_man_usevn3.webp",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
@@ -189,7 +189,19 @@ const products = [
         reviews: [
             { name: "Samreen", rating: 4, comment: "I have original one as well in 10ml bottle so I ordered it from here and it's really good....projection,lasting is 5 to 6 hours...thanks Wishe Fragrance." }
         ]
-    },
+    },{
+
+        id: 17,
+        title: "IMPRESSION OF BOMBSHELL BY VICTORIA SECRET",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1786121934/BOMBSHELL_asg60d.webp",
+        description: "A vibrant blend of juicy passion fruit with a deliciously sweet and tropical aroma. Its fresh, fruity notes create a light, uplifting, and refreshing scent experience. Perfect for adding a touch of exotic sweetness that lingers beautifully throughout the day.",
+        prices: { "50ml": 1600 , "100ml": 2500 },
+        reviews: [
+        //     { name: "Samreen", rating: 5, comment: "I have original one as well in 10ml bottle so I ordered it from here and it's really good....projection,lasting is 5 to 6 hours...thanks Wishe Fragrance." }
+         ]
+    }
+
 
 
 
