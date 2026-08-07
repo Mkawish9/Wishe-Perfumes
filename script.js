@@ -111,9 +111,10 @@ const products = [
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
         prices: { "50ml": 1800, "100ml": 3000 },
         reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
-    },{
+            { name: "Affan", rating: 4, comment: "Very Nice fragrance and also have lasting in this price" },
+            { name: "Muneeb rehman", rating: 5, comment: "Nothing can compete with this fragrance!" }
+        ]},
+    {
         id: 10,
         title: "GOLDEN HOUR",
         tag: "UNISEX",
@@ -142,9 +143,7 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953575/Poison_jdj44l.webp",
         description: "A captivating blend of rich amber and woody notes. Wrapped in sweet vanilla with a touch of wild berries, Crafted to leave an unforgettable impression.",
         prices: { "50ml": 1400, "100ml": 2500 },
-        reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
+        reviews: [  { name: "Sahar Noor", rating: 5, comment: "Just like the Original one" }  ]
     },
     {
         id: 13,
@@ -165,7 +164,7 @@ const products = [
         description: "Blooming jasmine meets the richness of tuberose. Soft white florals create a fresh, luxurious aura. Crafted for effortless elegance and everyday sophistication.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
+            { name: "Areeba", rating: 5, comment: "Received my second bottle of Gucci Bloom, and trust me, you guys have perfected the scent so much that it’s impossible to differentiate between the original n impression, as I have both. Longer lasting than before, amazing experience. Thank you!" }
         ]
     },
     {
@@ -178,7 +177,20 @@ const products = [
         reviews: [
             // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
         ]
-    }
+    },
+    {
+
+        id: 16,
+        title: "IMPRESSION OF FLORA BY GUCCI",
+        tag: "WOMEN",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785958580/GUCCI_FLORA_q6zlkk.webp",
+        description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
+        prices: { "50ml": 1500 , "100ml": 2500 },
+        reviews: [
+            { name: "Samreen", rating: 4, comment: "I have original one as well in 10ml bottle so I ordered it from here and it's really good....projection,lasting is 5 to 6 hours...thanks Wishe Fragrance." }
+        ]
+    },
+
 
 
 
