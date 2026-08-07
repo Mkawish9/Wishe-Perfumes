@@ -38,7 +38,7 @@ const products = [
         id: 3,
         title: "THE GENTLEMAN",
         tag: "MEN",
-        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1786118682/The_gentle_man_usevn3.webp",
+        image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1786130911/gentle_man_syojpn.png",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
