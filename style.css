@@ -1,3 +1,8 @@
+/* Smooth scrolling enabled for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fbfbfb;
     color: #1a1a1a;
@@ -32,16 +37,11 @@ body {
     letter-spacing: 3px;
 }
 
-.nav-menu-wrapper {
-    display: flex;
-    align-items: center;
-}
-
 .nav-menu {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -50,53 +50,12 @@ body {
     text-decoration: none;
     color: #666;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
     font-size: 0.95rem;
 }
 
 .nav-menu li a:hover, .nav-menu li a.active {
     color: #000;
-}
-
-.nav-dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #f4f4f4;
-    padding: 6px 14px;
-    border-radius: 30px;
-}
-
-.dropdown-title {
-    font-size: 0.8rem !important;
-    font-weight: 700 !important;
-    letter-spacing: 1.5px;
-    color: #111 !important;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.nav-cat-links {
-    display: flex;
-    gap: 6px;
-}
-
-.cat-link {
-    text-decoration: none;
-    color: #555;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 20px;
-    transition: all 0.3s;
-    background: #fff;
-    border: 1px solid #ddd;
-}
-
-.cat-link:hover, .cat-link.active {
-    color: #fff;
-    background: #111;
-    border-color: #111;
 }
 
 .nav-cart {
@@ -118,23 +77,13 @@ body {
     font-weight: 600;
 }
 
-/* Reference-style minimalist centered heading */
+/* Hero Section */
 .hero-section {
     background: #ffffff;
     color: #1a1a1a;
     text-align: center;
     padding: 60px 20px 45px 20px;
     border-bottom: 1px solid #eee;
-}
-
-.hero-content .hero-subtitle {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #777;
-    text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .hero-content h2 {
@@ -144,13 +93,6 @@ body {
     margin: 0 0 15px 0;
     color: #111;
     text-transform: uppercase;
-}
-
-.hero-divider {
-    width: 50px;
-    height: 2px;
-    background: #111;
-    margin: 0 auto 15px auto;
 }
 
 .hero-content p {
@@ -171,6 +113,18 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+}
+
+@media(max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .product-card {
@@ -528,4 +482,89 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.85rem;
+}
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES FOR WISHÉ FRAGRANCES
+   ========================================== */
+
+/* For Tablets and Medium Screens (Max-width: 900px) */
+@media(max-width: 900px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+/* For Mobile Phones and Smaller Devices (Max-width: 600px) */
+@media(max-width: 600px) {
+    .nav-container {
+        padding: 12px 15px;
+    }
+
+    .nav-logo {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu li a {
+        font-size: 0.85rem;
+    }
+
+    .hero-section {
+        padding: 40px 15px 30px 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+    .about-container h2, 
+    .contact-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-container p, 
+    .contact-header p {
+        font-size: 0.9rem;
+    }
+
+    .contact-info-box, 
+    .contact-form-box {
+        padding: 20px;
+    }
 }

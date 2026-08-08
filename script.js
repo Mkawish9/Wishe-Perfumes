@@ -9,7 +9,7 @@ const mediaConfig = {
     folder: "Assets" 
 };
 
-// 9 Products Data Array with 50ml/100ml pricing and persistent reviews storage
+// All 17 Products Data Array with 50ml/100ml pricing and persistent reviews storage
 const products = [
     {
         id: 1,
@@ -42,8 +42,7 @@ const products = [
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Mohammad Usman ", rating: 5, comment: "True gentleman vibe. Highly impressed for its longevity." },
-
+            { name: "Mohammad Usman ", rating: 5, comment: "True gentleman vibe. Highly impressed for its longevity." }
         ]
     },
     {
@@ -66,8 +65,7 @@ const products = [
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
             { name: "Ayesha Mughal", rating: 5, comment: "Very elegant and sweet floral touch,The fragrance stays fresh for hours."},
-            { name: "Fiza", rating: 5, comment: "The fragrances are really very nice and long lasting. Everyone asks about which perfume I am wearing."},
-
+            { name: "Fiza", rating: 5, comment: "The fragrances are really very nice and long lasting. Everyone asks about which perfume I am wearing."}
         ]
     },
     {
@@ -89,7 +87,7 @@ const products = [
         description: "A fresh fusion of grapefruit, rosemary, and cardamom, blended with smooth cedarwood and suede for a timeless, masculine, and effortlessly sophisticated scent.",
         prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
-            { name: "Farhan", rating: 5, comment: "Worth every rupee! Absolutely love this fragrance,Dil se pasand aya, sab ko recommend karunga. " }
+            { name: "Farhan", rating: 5, comment: "Worth every rupee! Absolutely love this fragrance,Dil se pasand aya, sab ko recommend karunga." }
         ]
     },
     {
@@ -113,7 +111,8 @@ const products = [
         reviews: [
             { name: "Affan", rating: 4, comment: "Very Nice fragrance and also have lasting in this price" },
             { name: "Muneeb rehman", rating: 5, comment: "Nothing can compete with this fragrance!" }
-        ]},
+        ]
+    },
     {
         id: 10,
         title: "GOLDEN HOUR",
@@ -121,9 +120,7 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785788084/Golden_hour_utjcqm.png",
         description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
         prices: { "50ml": 1500, "100ml": 2500 },
-        reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
+        reviews: []
     },
     {
         id: 11,
@@ -132,9 +129,7 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785789899/Chrystal_z9uv0i.png",
         description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
         prices: { "50ml": 1500, "100ml": 2500 },
-        reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
+        reviews: []
     },
     {
         id: 12,
@@ -143,7 +138,7 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953575/Poison_jdj44l.webp",
         description: "A captivating blend of rich amber and woody notes. Wrapped in sweet vanilla with a touch of wild berries, Crafted to leave an unforgettable impression.",
         prices: { "50ml": 1400, "100ml": 2500 },
-        reviews: [  { name: "Sahar Noor", rating: 5, comment: "Just like the Original one" }  ]
+        reviews: [{ name: "Sahar Noor", rating: 5, comment: "Just like the Original one" }]
     },
     {
         id: 13,
@@ -152,9 +147,7 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953588/Ofc_for_men_wgfgpx.webp",
         description: "A refreshing burst of bergamot meets delicate jasmine. Balanced with rich woody notes for timeless elegance. A fragrance that defines confidence and sophistication.",
         prices: { "50ml": 1800, "100ml": 3000 },
-        reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
+        reviews: []
     },
     {
         id: 14,
@@ -174,39 +167,28 @@ const products = [
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785953593/Ombre_Nomade_lukmzr.webp",
         description: "A rich fusion of precious agarwood and smooth leather. Enhanced with warm amber and deep oud accords. A bold, luxurious fragrance with an unforgettable presence.",
         prices: { "50ml": 1700, "100ml": 3000 },
-        reviews: [
-            // { name: "Kashif", rating: 4, comment: "Very refreshing scent profile." }
-        ]
+        reviews: []
     },
     {
-
         id: 16,
         title: "IMPRESSION OF FLORA BY GUCCI",
         tag: "WOMEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1785958580/GUCCI_FLORA_q6zlkk.webp",
         description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
-        prices: { "50ml": 1500 , "100ml": 2500 },
+        prices: { "50ml": 1500, "100ml": 2500 },
         reviews: [
             { name: "Samreen", rating: 4, comment: "I have original one as well in 10ml bottle so I ordered it from here and it's really good....projection,lasting is 5 to 6 hours...thanks Wishe Fragrance." }
         ]
-    },{
-
+    },
+    {
         id: 17,
         title: "IMPRESSION OF BOMBSHELL BY VICTORIA SECRET",
         tag: "WOMEN",
         image: "https://res.cloudinary.com/awgrxf0m/image/upload/v1786121934/BOMBSHELL_asg60d.webp",
         description: "A vibrant blend of juicy passion fruit with a deliciously sweet and tropical aroma. Its fresh, fruity notes create a light, uplifting, and refreshing scent experience. Perfect for adding a touch of exotic sweetness that lingers beautifully throughout the day.",
-        prices: { "50ml": 1600 , "100ml": 2500 },
-        reviews: [
-        //     { name: "Samreen", rating: 5, comment: "I have original one as well in 10ml bottle so I ordered it from here and it's really good....projection,lasting is 5 to 6 hours...thanks Wishe Fragrance." }
-         ]
+        prices: { "50ml": 1600, "100ml": 2500 },
+        reviews: []
     }
-
-
-
-
-
-    
 ];
 
 let cart = []; 
@@ -221,7 +203,6 @@ function displayProducts() {
         const card = document.createElement('div');
         card.classList.add('product-card');
 
-        // Calculate average rating
         let avgRating = 0;
         if (product.reviews.length > 0) {
             const sum = product.reviews.reduce((acc, r) => acc + r.rating, 0);
@@ -255,7 +236,6 @@ function displayProducts() {
                     </button>
                 </div>
 
-                <!-- Reviews and Comments Expandable Section -->
                 <div class="reviews-section">
                     <button class="reviews-toggle-btn" onclick="toggleReviews(${product.id})">
                         <i class="fas fa-comments"></i> Customer Reviews (${product.reviews.length})
@@ -335,7 +315,6 @@ function submitReview(event, productId) {
     if (product) {
         product.reviews.push({ name, rating, comment });
         displayProducts();
-        // Keep section open after re-rendering
         setTimeout(() => {
             const box = document.getElementById(`reviews-box-${productId}`);
             if (box) box.style.display = 'block';
