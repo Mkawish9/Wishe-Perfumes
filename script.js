@@ -590,3 +590,11 @@ document.addEventListener('DOMContentLoaded', () => {
     displayProducts();
     initModals();
 });
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu').parentElement;
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
