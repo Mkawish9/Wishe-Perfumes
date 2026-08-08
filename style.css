@@ -1,7 +1,6 @@
-/* Black & White Mix Theme Customizations */
 body {
-    background-color: #f8f9fa;
-    color: #121212;
+    background-color: #fbfbfb;
+    color: #1a1a1a;
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body {
 
 .navbar {
     background: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -19,43 +18,91 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 18px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: #000;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
 
 .nav-menu li a {
     text-decoration: none;
-    color: #555;
+    color: #666;
     font-weight: 500;
     transition: color 0.3s;
+    font-size: 0.95rem;
 }
 
 .nav-menu li a:hover, .nav-menu li a.active {
     color: #000;
 }
 
+.nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f4f4f4;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.dropdown-title {
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px;
+    color: #111 !important;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nav-cat-links {
+    display: flex;
+    gap: 6px;
+}
+
+.cat-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.cat-link:hover, .cat-link.active {
+    color: #fff;
+    background: #111;
+    border-color: #111;
+}
+
 .nav-cart {
     cursor: pointer;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #000;
 }
 
@@ -65,72 +112,71 @@ body {
     right: -10px;
     background: #000;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     padding: 2px 6px;
     border-radius: 50%;
+    font-weight: 600;
 }
 
+/* Reference-style minimalist centered heading */
 .hero-section {
-    background: #121212;
-    color: #fff;
+    background: #ffffff;
+    color: #1a1a1a;
     text-align: center;
-    padding: 100px 20px;
+    padding: 60px 20px 45px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-content .hero-subtitle {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .hero-content h2 {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.hero-divider {
+    width: 50px;
+    height: 2px;
+    background: #111;
+    margin: 0 auto 15px auto;
 }
 
 .hero-content p {
-    color: #aaa;
+    color: #555;
     max-width: 600px;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.sub-title {
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
-    font-size: 0.95rem;
-    line-height: 1.8;
-}
-
-/* Product Grid & Card Styling */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .product-card {
     background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -139,12 +185,12 @@ body {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
 .product-image {
     position: relative;
-    background: #f1f1f1;
+    background: #f7f7f7;
     height: 280px;
     display: flex;
     align-items: center;
@@ -161,12 +207,13 @@ body {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #000;
+    background: #111;
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding: 4px 10px;
     border-radius: 4px;
     letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
 .product-content {
@@ -179,8 +226,8 @@ body {
 .product-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
+    color: #111;
+    margin-bottom: 5px;
 }
 
 .product-description {
@@ -206,12 +253,12 @@ body {
 
 .size-selector select {
     width: 100%;
-    padding: 8px 12px;
-    background: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 9px 12px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 0.9rem;
-    color: #000;
+    color: #111;
     outline: none;
     cursor: pointer;
 }
@@ -220,7 +267,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #f0f0f0;
     padding-top: 15px;
     margin-top: auto;
 }
@@ -228,17 +275,17 @@ body {
 .product-price {
     font-size: 1rem;
     font-weight: 600;
-    color: #000;
+    color: #111;
 }
 
 .buy-btn {
-    background: #000;
+    background: #111;
     color: #fff;
     border: none;
     padding: 10px 16px;
     font-weight: 600;
     font-size: 0.8rem;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -251,7 +298,6 @@ body {
     background: #333;
 }
 
-/* Reviews Section Styling */
 .reviews-section {
     margin-top: 15px;
     border-top: 1px dashed #e0e0e0;
@@ -310,18 +356,6 @@ body {
     box-sizing: border-box;
 }
 
-.star-rating-select {
-    display: flex;
-    gap: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
-.star-rating-select .selected {
-    color: #f39c12;
-}
-
 .submit-review-btn {
     background: #121212;
     color: #fff;
@@ -333,10 +367,9 @@ body {
     font-weight: 600;
 }
 
-/* About Section */
 #about {
     padding: 80px 20px;
-    background: #121212;
+    background: #111;
     color: #fff;
 }
 
@@ -361,7 +394,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Contact Section */
 #contact {
     padding: 80px 20px;
     background: #ffffff;
