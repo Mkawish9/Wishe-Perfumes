@@ -1,3 +1,5 @@
+// Updated code with fixes for rendering duplicates and filtering logic
+
 const products = [
     {
         id: 1,
@@ -234,10 +236,7 @@ const products = [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786398634/burberry_hero_perfume_peh9tt.webp"
         ],
         price50ml: "1,500.00",
-        price100ml: "2,500.00",
-        // rating: 4.9,
-        // reviewsCount: 39,
-                // userReviews: ["Perfect everyday office perfume."]
+        price100ml: "2,500.00"
     },
     {
         id: 14,
@@ -252,8 +251,7 @@ const products = [
         price50ml: "1,600.00",
         price100ml: "3,000.00",
         rating: 0.0,
-        reviewsCount: 0,
-        // userReviews: ["Perfect everyday office perfume."]
+        reviewsCount: 0
     },
     {
         id: 15,
@@ -266,10 +264,7 @@ const products = [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786398149/perfume_product_photography_xul0v9.webp"
         ],
         price50ml: "1,300.00",
-        price100ml: "2,500.00",
-        // rating: 4.9,
-        // reviewsCount: 39,
-        // userReviews: ["Perfect everyday office perfume."]
+        price100ml: "2,500.00"
     },
     {
         id: 16,
@@ -284,8 +279,7 @@ const products = [
         price50ml: "1,500.00",
         price100ml: "2,500.00",
         rating: 0.0,
-        reviewsCount: 0,
-        // userReviews: ["Perfect everyday office perfume."]
+        reviewsCount: 0
     },
     {
         id: 17,
@@ -306,7 +300,7 @@ const products = [
     {
         id: 18,
         category: "women",
-        categoryLabel: "Women",
+        categoryLabel: "women",
         name: "GUCCI BLOOM",
         description: "Blooming jasmine meets the richness of tuberose. Soft white florals create a fresh, luxurious aura. Crafted for effortless elegance and everyday sophistication.",
         images: [
@@ -322,7 +316,7 @@ const products = [
     {
         id: 19,
         category: "women",
-        categoryLabel: "Women",
+        categoryLabel: "women",
         name: "BOMBSHELL",
         description: "A vibrant blend of juicy passion fruit with a deliciously sweet and tropical aroma. Its fresh, fruity notes create a light, uplifting, and refreshing scent experience. Perfect for adding a touch of exotic sweetness that lingers beautifully throughout the day.",
         images: [
@@ -338,7 +332,7 @@ const products = [
     {
         id: 20,
         category: "women",
-        categoryLabel: "Women",
+        categoryLabel: "women",
         name: "GUCCI FLORA",
         description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
         images: [
@@ -354,7 +348,7 @@ const products = [
     {
         id: 21,
         category: "women",
-        categoryLabel: "Women",
+        categoryLabel: "women",
         name: "OFFICE FOR WOMEN",
         description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
         images: [
@@ -364,13 +358,12 @@ const products = [
         price50ml: "1,400.00",
         price100ml: "2,500.00",
         rating: 0.0,
-        reviewsCount:0,
-        // userReviews: ["Rich and fruity blend."]
+        reviewsCount: 0
     },
     {
         id: 22,
         category: "women",
-        categoryLabel: "Women",
+        categoryLabel: "women",
         name: "MY BURBERRY",
         description: "A sophisticated floral fragrance with fresh sweet pea and bergamot, softened by elegant rose and a warm, earthy base. Chic, graceful, and timeless, perfect for adding a refined touch to everyday wear.",
         images: [
@@ -380,8 +373,7 @@ const products = [
         price50ml: "1,300.00",
         price100ml: "2,500.00",
         rating: 5.0,
-        reviewsCount: 0,
-        // userReviews: ["Very cozy and smooth musk."]
+        reviewsCount: 0
     }
 ];
 
@@ -391,18 +383,17 @@ const selectedCardSizes = {};
 let currentCategoryFilter = 'all';
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderProducts(products);
-});
-
-function filterCategory(categoryKey) {
-    currentCategoryFilter = categoryKey;
-    
-    document.querySelectorAll('.nav-menu .nav-link').forEach(link => {
-        link.classList.remove('active');
+    // NAYA: Pre-load all secondary images taake mobile par foran dikhein
+    products.forEach(product => {
+        if (product.images && product.images.length > 1) {
+            const img = new Image();
+            img.src = product.images[1];
+        }
     });
     
+    // Purana render call
     renderProducts(products);
-}
+});
 
 function renderProducts(productsToRender) {
     const container = document.getElementById("productGrid");
