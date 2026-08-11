@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WISHÉ | Luxury Collection Showcase</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS Link -->
@@ -13,50 +13,39 @@
 </head>
 <body>
 
-    <!-- Top Announcement Bar -->
-    <div class="top-bar">
-        <p>🚀 Free Delivery on orders above Rs. 3,999 | Custom Blends & Luxury Impressions</p>
-    </div>
-
-    <!-- Main Header & Sensation Style Navbar -->
-    <header class="main-header">
+    <!-- Navigation Menu -->
+    <nav class="navbar">
         <div class="nav-container">
-            <!-- Left Mobile Menu Toggle & Search -->
-            <div class="nav-left">
-                <button class="menu-toggle" id="menuToggle">☰</button>
-                <a href="#products" class="icon-link"><i class="fas fa-search"></i> Search</a>
+            <a href="#" class="nav-logo" onclick="filterCategory('all'); return false;">WISHÉ</a>
+            
+            <!-- Search Bar inside Navbar -->
+            <div class="nav-search-box">
+                <input type="text" id="searchInput" placeholder="Search fragrances..." onkeyup="filterProducts()">
+                <i class="fas fa-search"></i>
             </div>
 
-            <!-- Center Logo -->
-            <div class="nav-logo">
-                <a href="#">WISHÉ</a>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" onclick="filterCategory('all'); return false;">Home</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterCategory('all')">Fragrance</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterCategory('wishe-original')">WISHÉ Original</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterCategory('men')">Men</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterCategory('women')">Women</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-            <!-- Right Cart Icon -->
-            <div class="nav-right">
-                <a href="#contact" class="icon-link">Support</a>
-                <div class="nav-cart icon-link" onclick="toggleCart()">
-                    <i class="fas fa-shopping-bag"></i> Bag (<span id="cartCount">0</span>)
-                </div>
+            <div class="nav-cart" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
             </div>
         </div>
-
-        <!-- Navigation Links Bar (Bottom Row) -->
-        <nav class="nav-links-bar">
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#products">Fragrance</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <!-- Header / Hero Section -->
     <header class="hero-section">
         <div class="hero-content">
             <h2>The Art of Becoming Unforgettable.</h2>
-            <p>creates more than perfumes—it creates invisible masterpieces that reflect confidence, character, and timeless elegance.</p>
+            <p>WISHÉ creates more than perfumes—it creates invisible masterpieces that reflect confidence, character, and timeless elegance.</p>
         </div>
     </header>
 
@@ -69,6 +58,24 @@
         <!-- Product Grid -->
         <div class="product-grid" id="productGrid">
             <!-- Dynamic Products from JavaScript -->
+        </div>
+    </div>
+
+    <!-- Cart Sidebar Drawer -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <button onclick="toggleCart()" class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items go here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice">Rs. 0</span>
+            </div>
+            <button onclick="checkoutWhatsApp()" class="whatsapp-checkout-btn">Proceed to WhatsApp Checkout</button>
         </div>
     </div>
 
