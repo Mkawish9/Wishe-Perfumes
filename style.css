@@ -717,5 +717,64 @@ footer {
 }
 
 /* ==========================================
-   SESKY STYLE WHITE HERO BANNER (CENTERED)
+   SESKY STYLE WHITE HERO BANNER (GAP ADJUSTED)
    ========================================== */
+.wishe-banner {
+    width: 100%;
+    height: 100x; /* Yahan se aap banner ki height mazeed kam ya zyada kar sakte hain */
+    background-image: url('https://res.cloudinary.com/awgrxf0m/image/upload/v1786483343/luxury_perfume_banner_nkgz4n.webp');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 15px; /* Navbar aur banner ke darmiyan gap control karne ke liye */
+}
+
+.wishe-banner .banner-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    color: #111111;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #666666;
+}
+
+/* Mobile Screens ke liye adjustments */
+@media (max-width: 768px) {
+    .wishe-banner {
+        height: 180px; /* Mobile par height */
+        background-size: contain; 
+    }
+    .banner-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishe-banner {
+        height: 150px; /* Chote mobile phones ke liye height */
+    }
+    .banner-content h2 {
+        font-size: 1.1rem;
+    }
+}
