@@ -684,3 +684,22 @@ function sendContactToWhatsApp(event) {
     const whatsappUrl = `https://wa.me/923354935544?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
 }
+
+function toggleMobileMenu() {
+    const navMenu = document.getElementById("navMenu");
+    const hamburgerIcon = document.querySelector("#hamburger i");
+    
+    if (navMenu) {
+        navMenu.classList.toggle("active");
+    }
+    
+    if (hamburgerIcon) {
+        if (navMenu.classList.contains("active")) {
+            hamburgerIcon.classList.remove("fa-bars");
+            hamburgerIcon.classList.add("fa-times");
+        } else {
+            hamburgerIcon.classList.remove("fa-times");
+            hamburgerIcon.classList.add("fa-bars");
+        }
+    }
+}
