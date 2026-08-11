@@ -1,4 +1,4 @@
-// Updated code with fixes for rendering duplicates and filtering logic
+// Complete & Fixed JavaScript Code for WISHÉ Fragrances
 
 const products = [
     {
@@ -383,7 +383,7 @@ const selectedCardSizes = {};
 let currentCategoryFilter = 'all';
 
 document.addEventListener("DOMContentLoaded", () => {
-    // NAYA: Pre-load all secondary images taake mobile par foran dikhein
+    // Pre-load all secondary images
     products.forEach(product => {
         if (product.images && product.images.length > 1) {
             const img = new Image();
@@ -391,7 +391,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     
-    // Purana render call
     renderProducts(products);
 });
 
@@ -565,26 +564,39 @@ function changeSize(productId, size, btnElement) {
     }
 }
 
+function filterAndScroll(category) {
+    currentCategoryFilter = category;
+    renderProducts(products);
+    const productsSection = document.getElementById("products");
+    if (productsSection) {
+        productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function toggleCart() {
+    const cartSidebar = document.getElementById("cartSidebar");
+    if (cartSidebar) {
+        cartSidebar.classList.toggle("open");
+    }
+}
+
 function addToCart(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
+
     const size = selectedCardSizes[productId] || '50ml';
-    
-    let rawPrice = size === '100ml' ? product.price100ml : product.price50ml;
-    const price = typeof rawPrice === 'string' ? parseFloat(rawPrice.replace(/,/g, '')) : rawPrice;
+    const price = size === '100ml' ? product.price100ml : product.price50ml;
 
-    const cartItemKey = `${product.id}-${size}`;
-    const existingItem = cart.find(item => item.key === cartItemKey);
-
+    const existingItem = cart.find(item => item.id === productId && item.size === size);
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({
-            key: cartItemKey,
+            id: product.id,
             name: product.name,
             size: size,
             price: price,
-            displayPrice: rawPrice,
+            image: product.images[0],
             quantity: 1
         });
     }
@@ -594,77 +606,81 @@ function addToCart(productId) {
 }
 
 function updateCartUI() {
-    const cartItemsContainer = document.getElementById("cartItems");
     const cartCount = document.getElementById("cartCount");
+    const cartItems = document.getElementById("cartItems");
     const cartTotalPrice = document.getElementById("cartTotalPrice");
 
-    if (!cartItemsContainer) return;
-
-    cartItemsContainer.innerHTML = "";
     let totalCount = 0;
     let totalPrice = 0;
 
-    cart.forEach(item => {
-        totalCount += item.quantity;
-        totalPrice += item.price * item.quantity;
+    if (cartItems) {
+        cartItems.innerHTML = "";
+        if (cart.length === 0) {
+            cartItems.innerHTML = `<p style="text-align:center; color:#777; padding:20px;">Your shopping bag is empty.</p>`;
+        } else {
+            cart.forEach((item, index) => {
+                totalCount += item.quantity;
+                const cleanPrice = parseFloat(item.price.replace(/,/g, ''));
+                const itemTotal = cleanPrice * item.quantity;
+                totalPrice += itemTotal;
 
-        const div = document.createElement("div");
-        div.className = "cart-item";
-        div.innerHTML = `
-            <div>
-                <strong>${item.name} (${item.size})</strong>
-                <div>Rs. ${item.displayPrice} x ${item.quantity}</div>
-            </div>
-            <button onclick="removeFromCart('${item.key}')" style="background:none; border:none; color:red; cursor:pointer;"><i class="fas fa-trash"></i></button>
-        `;
-        cartItemsContainer.appendChild(div);
-    });
+                const div = document.createElement("div");
+                div.className = "cart-item";
+                div.style.cssText = "display: flex; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; align-items: center;";
+                div.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    <div style="flex: 1;">
+                        <h4 style="font-size: 0.9rem; margin: 0;">${item.name} (${item.size})</h4>
+                        <p style="font-size: 0.8rem; color: #555; margin: 2px 0;">Rs. ${item.price} x ${item.quantity}</p>
+                    </div>
+                    <button onclick="removeFromCart(${index})" style="background: none; border: none; color: #ff4d4d; cursor: pointer; font-size: 1rem;"><i class="fas fa-trash"></i></button>
+                `;
+                cartItems.appendChild(div);
+            });
+        }
+    }
 
     if (cartCount) cartCount.innerText = totalCount;
-    if (cartTotalPrice) cartTotalPrice.innerText = `Rs. ${totalPrice.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    if (cartTotalPrice) cartTotalPrice.innerText = `Rs. ${totalPrice.toLocaleString()}.00`;
 }
 
-function removeFromCart(key) {
-    cart = cart.filter(item => item.key !== key);
+function removeFromCart(index) {
+    cart.splice(index, 1);
     updateCartUI();
-}
-
-function toggleCart() {
-    const sidebar = document.getElementById("cartSidebar");
-    if (sidebar) sidebar.classList.toggle("open");
 }
 
 function checkoutWhatsApp() {
     if (cart.length === 0) {
-        alert("Your bag is empty!");
+        alert("Your cart is empty!");
         return;
     }
 
-    let message = "Hello WISHÉ, I want to place an order:%0A";
+    let message = "Hello WISHÉ Fragrances, I want to place an order:\n\n";
     let total = 0;
 
     cart.forEach(item => {
-        message += `- ${item.name} (${item.size}) x ${item.quantity} = Rs. ${(item.price * item.quantity).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}%0A`;
-        total += item.price * item.quantity;
+        const cleanPrice = parseFloat(item.price.replace(/,/g, ''));
+        const subtotal = cleanPrice * item.quantity;
+        total += subtotal;
+        message += `- ${item.name} (${item.size}) x ${item.quantity} = Rs. ${subtotal.toLocaleString()}.00\n`;
     });
 
-    message += `%0A*Total Amount:* Rs. ${total.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    message += `\nTotal Amount: Rs. ${total.toLocaleString()}.00`;
+    message += "\nPlease confirm my order details.";
 
-    const whatsappNumber = "923354935544";
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/923354935544?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
 }
 
 function sendContactToWhatsApp(event) {
     event.preventDefault();
-    
-    const nameEl = document.getElementById('contactName');
-    const phoneEl = document.getElementById('contactPhone');
-    const messageEl = document.getElementById('contactMessage');
+    const name = document.getElementById("contactName").value.trim();
+    const phone = document.getElementById("contactPhone").value.trim();
+    const userMsg = document.getElementById("contactMessage").value.trim();
 
-    if (!nameEl || !phoneEl || !messageEl) return;
-
-    const whatsappNumber = "923354935544";
-    const text = `Name: ${nameEl.value}%0APhone: ${phoneEl.value}%0AMessage: ${messageEl.value}`;
-    
-    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+    const message = `Hello WISHÉ Support,\n\nName: ${name}\nPhone: ${phone}\nMessage: ${userMsg}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/923354935544?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
 }
