@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WISHÉ | Luxury Collection Showcase</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS Link -->
@@ -13,53 +13,50 @@
 </head>
 <body>
 
-   <!-- Navigation Menu -->
-   <nav class="navbar">
-    <div class="nav-container">
-        <a href="#" class="nav-logo" onclick="filterAndScroll('all'); return false;">WISHÉ</a>
-        
-        <!-- Search Bar inside Navbar -->
-        <div class="nav-search-box">
-            <input type="text" id="searchInput" placeholder="Search fragrances..." onkeyup="filterProducts()">
-            <i class="fas fa-search"></i>
-        </div>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" onclick="filterAndScroll('all'); return false;">WISHÉ</a>
+            
+            <!-- Search Bar inside Navbar -->
+            <div class="nav-search-box">
+                <input type="text" id="searchInput" placeholder="Search fragrances..." onkeyup="filterProducts()">
+                <i class="fas fa-search"></i>
+            </div>
 
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#products" class="nav-link active" onclick="filterAndScroll('all'); toggleMobileMenu();">Home</a></li>
-            <li><a href="#products" class="nav-link" onclick="filterAndScroll('all'); toggleMobileMenu();">Fragrance</a></li>
-            <li><a href="#products" class="nav-link" onclick="filterAndScroll('wishe-original'); toggleMobileMenu();">WISHÉ Original</a></li>
-            <li><a href="#products" class="nav-link" onclick="filterAndScroll('men'); toggleMobileMenu();">Men</a></li>
-            <li><a href="#products" class="nav-link" onclick="filterAndScroll('women'); toggleMobileMenu();">Women</a></li>
-            <li><a href="#about" class="nav-link" onclick="toggleMobileMenu();">About</a></li>
-            <li><a href="#contact" class="nav-link" onclick="toggleMobileMenu();">Contact</a></li>
-        </ul>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#products" class="nav-link active" onclick="filterAndScroll('all'); toggleMobileMenu();">Home</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterAndScroll('all'); toggleMobileMenu();">Fragrance</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterAndScroll('wishe-original'); toggleMobileMenu();">WISHÉ Original</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterAndScroll('men'); toggleMobileMenu();">Men</a></li>
+                <li><a href="#products" class="nav-link" onclick="filterAndScroll('women'); toggleMobileMenu();">Women</a></li>
+                <li><a href="#about" class="nav-link" onclick="toggleMobileMenu();">About</a></li>
+                <li><a href="#contact" class="nav-link" onclick="toggleMobileMenu();">Contact</a></li>
+            </ul>
 
-        <!-- Hamburger Icon for Mobile -->
-        <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
 
-        <div class="nav-cart" onclick="toggleCart()">
-            <i class="fas fa-shopping-bag"></i>
-            <span class="cart-count" id="cartCount">0</span>
+            <div class="nav-cart" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
         </div>
-    </div>
-</nav>
-    <!-- Header / Hero Section -->
-    <!-- <header class="hero-section"> -->
-        <div class="hero-content">
-            <!-- <h2>The Art of Becoming Unforgettable.</h2> -->
-            <!-- <p>WISHÉ creates more than perfumes—it creates invisible masterpieces that reflect confidence, character, and timeless elegance.</p> -->
+    </nav>
+
+    <!-- Sesky Style Hero Section with Perfume Image -->
+    <section class="sesky-hero">
+        <div class="sesky-hero-container">
+            <!-- <h1 class="sesky-title">WISHÉ PRIME <span>14</span></h1> -->
+            <div class="sesky-hero-image">
+                <img src="https://res.cloudinary.com/awgrxf0m/image/upload/v1786479766/perfume_studio_hero_r2jtpi.webp" alt="Wishé Prime Collection">
+            </div>
         </div>
-    </header>
+    </section>
 
     <!-- Main Content Container -->
-     <section class="wishe-banner">
-    <div class="banner-content">
-        <!-- <h2>WISHÉ Original Collection</h2> -->
-        <!-- <p>Experience the signature essence of our master craftsmanship.</p> -->
-    </div>
-</section>
     <div class="container" id="products">
         <div class="section-header">
             <br>

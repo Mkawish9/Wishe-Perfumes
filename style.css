@@ -717,32 +717,32 @@ footer {
 }
 
 /* ==========================================
-   WISHÉ ORIGINAL COVER BANNER STYLES
+   SESKY STYLE WHITE HERO BANNER (CENTERED)
    ========================================== */
 .wishe-banner {
     width: 100%;
-    height: 320px; /* Banner ki height */
-    /* Light white overlay taake photo bright lage aur white theme se match kare */
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), 
-                url('YAHAN_APNI_IMAGE_KA_DIRECT_LINK_DAALEIN'); 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px 20px 20px 20px;
     text-align: center;
-    color: #111111; /* Clean black text for white theme */
-    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 30px;
 }
 
+.wishe-banner .banner-content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .banner-content h2 {
-    font-size: 2.3rem;
-    font-weight: 800;
+    font-size: 3.5rem;
+    font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: -15px;
     color: #111111;
+    position: relative;
+    z-index: 2;
 }
 
 .banner-content p {
@@ -752,26 +752,37 @@ footer {
     color: #666666;
 }
 
+/* Responsive banner image container to keep it centered on mobile */
+.wishe-banner {
+    background-image: url('https://res.cloudinary.com/awgrxf0m/image/upload/v1786479766/perfume_studio_hero_r2jtpi.webp
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+
 /* Mobile Screens ke liye responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 768x) {
     .wishe-banner {
-        height: 220px;
+        height:220;
+        background-size: 100% auto;
+        padding-top: 15px;
     }
     .banner-content h2 {
         font-size: 1.5rem;
-    }
-    .banner-content p {
-        font-size: 0.85rem;
-        padding: 0 15px;
+        margin-bottom: -5px;
     }
 }
 
-.wishe-banner {
-    width: 100%; height: 700px;
-    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(104, 102, 102, 0)), 
-                url('https://res.cloudinary.com/awgrxf0m/image/upload/v1786479766/perfume_studio_hero_r2jtpi.webp'); 
-    background-size: cover; background-position: center;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center; color: #151313; border-bottom: 1px solid #0a0a0a;
+@media (max-width:60) {
+    .wishe-banner {
+        height: 10x;
+    }
+    .banner-content h2 {
+        font-size: 1.3rem;
+    }
 }
-.banner-content h2 { font-size: 2.3rem; text-transform: uppercase; }
