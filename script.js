@@ -366,6 +366,22 @@ const products = [
         userReviews: ["Rich and fruity blend."]
     },
     {
+        id: 28,
+        category: "women",
+        categoryLabel: "women",
+        name: "INSPIRED BY BACCARAT ROUGH 540 ",
+        description: "Saffron, Jasmine, Amberwood, Ambergris & Cedarwood. A luxurious, warm, and airy fragrance with a sweet woody touch and long-lasting finish.",
+        images: [
+           "https://res.cloudinary.com/awgrxf0m/image/upload/v1786573869/perfume_bottle_centered_5_ld3lw6.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786574648/Screenshot_2026-08-13_034604_fkt30a.png"
+        ],
+        price50ml: "1,500.00",
+        price100ml: "2,500.00",
+        rating: 4.5,
+        reviewsCount: 1,
+        userReviews: ["Rich and fruity blend."]
+    },
+    {
         id: 21,
         category: "women",
         categoryLabel: "women",
