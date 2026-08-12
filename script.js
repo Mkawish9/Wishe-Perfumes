@@ -88,7 +88,7 @@ const products = [
         name: "THE GENTLEMAN",
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         images: [
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786394348/perfume_bottle_neon_photorealistic_pshenj.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571184/perfume_neon_green_blue_cmyenp.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463487/luxury_neon_product_set_yohade.webp"
         ],
         price50ml: "1,600.00",
@@ -133,7 +133,7 @@ const products = [
         id: 81,
         category: "men",
         categoryLabel: "men",
-        name: "OFFICE FOR MEN",
+        name: "INSPIRED BY OFFICE FOR MEN",
         description: "A refreshing burst of bergamot meets delicate jasmine. Balanced with rich woody notes for timeless elegance. A fragrance that defines confidence and sophistication.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391246/ofm_2_atgu3m.webp",
@@ -152,7 +152,7 @@ const products = [
         name: "GOLDEN HOUR",
         description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
         images: [
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786206366/Golden_hour_zvzyj7.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571603/golden_hour_perfume_1_zw1glf.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463967/golden_hour_set_yqkndo.webp"
         ],
         price50ml: "1,400.00",
@@ -168,7 +168,7 @@ const products = [
         name: "Chrystal Breeze",
         description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
         images: [
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786206520/crystal_breeze_perfume_xxf6qu.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571951/perfume_prism_silk_be8yrs.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786464264/crystal_breeze_prism_flatlay_idb6ew.webp"
         ],
         price50ml: "1,400.00",
@@ -194,10 +194,26 @@ const products = [
         userReviews: ["Very smoky and rich ."]
     },
     {
+        id: 27,
+        category: "men",
+        categoryLabel: "men",
+        name: "INSPIRED BY TOM FORD NOIR",
+        description: "Fresh Citrus, Spicy Accords, Woody Notes, Amber & Musk. A rich and sophisticated blend with a warm, elegant, and long-lasting finish.",
+        images: [
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786569953/centered_perfume_bottle_fcjr9s.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786570050/perfume_smoky_amber_1_nbbw2b.webp"
+        ],
+        price50ml: "1,400.00",
+        price100ml: "2,500.00",
+        rating: 0.0,
+        reviewsCount: 0,
+        userReviews: [""]
+    },
+    {
         id: 12,
         category: "men",
         categoryLabel: "men",
-        name: "CREED AVENTUS",
+        name: "INSPIRED BY CREED AVENTUS",
         description: "A luxurious and charismatic fragrance blending fresh pineapple and citrus with a rich, smoky heart. Bold, sophisticated, and effortlessly masculine, with a warm woody finish that leaves a lasting impression.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391327/CA_aylyem.webp",
@@ -213,7 +229,7 @@ const products = [
         id: 25,
         category: "men",
         categoryLabel: "men",
-        name: "DUNHIL DESIRE RED",
+        name: "INSPIRED BY DUNHIL DESIRE ",
         description: "A luxurious and charismatic fragrance blending fresh pineapple and citrus with a rich, smoky heart. Bold, sophisticated, and effortlessly masculine, with a warm woody finish that leaves a lasting impression.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786458870/luxury_perfume_advertisement_2_ny6co5.webp",
@@ -229,20 +245,22 @@ const products = [
         id: 13,
         category: "men",
         categoryLabel: "men",
-        name: "BURBERRY HERO",
+        name: "INSPIRED BY BURBERRY HERO",
         description: "A fresh and woody fragrance with sparkling bergamot and juniper, layered over a warm, smooth cedarwood base. Bold, modern, and masculine, it’s perfect for everyday wear with a confident and sophisticated feel.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786392262/hero_vusa3m.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786398634/burberry_hero_perfume_peh9tt.webp"
         ],
         price50ml: "1,500.00",
-        price100ml: "2,500.00"
+        price100ml: "2,500.00",
+        rating: 0.0,
+        reviewsCount: 0
     },
     {
         id: 14,
         category: "men",
         categoryLabel: "men",
-        name: "OMBRE NOMADE",
+        name: "INSPIRED BY OMBRE NOMADE",
         description: "A bold and luxurious fragrance with a smoky, warm character, blending rich oud with a touch of sweetness and spice. Deep, mysterious, and long-lasting—perfect for those who love an intense oriental scent.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391194/ON_z3x4da.webp",
@@ -257,20 +275,22 @@ const products = [
         id: 15,
         category: "men",
         categoryLabel: "men",
-        name: "DAVID BACKHAM",
+        name: "INSPIRED BY DAVID BACKHAM",
         description: "A fresh, masculine fragrance with a clean citrus opening, aromatic herbs, and a warm woody finish. Elegant and versatile, it’s perfect for everyday wear with a confident, sophisticated feel.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786392491/luxury_perfume_stadium_xuhc8q.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786398149/perfume_product_photography_xul0v9.webp"
         ],
         price50ml: "1,300.00",
-        price100ml: "2,500.00"
+        price100ml: "2,500.00",
+        rating: 0.0,
+        reviewsCount: 0
     },
     {
         id: 16,
         category: "men",
         categoryLabel: "men",
-        name: "SAUVAGE",
+        name: "INSPIRED BY SAUVAGE",
         description: "A fresh, powerful and masculine fragrance opening with zesty bergamot, balanced by spicy pepper and aromatic lavender. Clean, confident, and intense with a smooth woody-ambery dry down that leaves a strong impression.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786392686/perfume_bottle_bold_label_bwf55l.webp",
@@ -285,7 +305,7 @@ const products = [
         id: 17,
         category: "women",
         categoryLabel: "women",
-        name: "POISON",
+        name: "INSPIRED BY POISON",
         description: "A captivating blend of rich amber and woody notes. Wrapped in sweet vanilla with a touch of wild berries, Crafted to leave an unforgettable impression.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391400/POeson_i1nlxa.webp",
@@ -301,7 +321,7 @@ const products = [
         id: 18,
         category: "women",
         categoryLabel: "women",
-        name: "GUCCI BLOOM",
+        name: "INSPIRED BY GUCCI BLOOM",
         description: "Blooming jasmine meets the richness of tuberose. Soft white florals create a fresh, luxurious aura. Crafted for effortless elegance and everyday sophistication.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391640/night_garden_perfume_nfnmrg.webp",
@@ -317,8 +337,8 @@ const products = [
         id: 19,
         category: "women",
         categoryLabel: "women",
-        name: "BOMBSHELL",
-        description: "A vibrant blend of juicy passion fruit with a deliciously sweet and tropical aroma. Its fresh, fruity notes create a light, uplifting, and refreshing scent experience. Perfect for adding a touch of exotic sweetness that lingers beautifully throughout the day.",
+        name: "INSPIRED BY BOMBSHELL",
+        description: "Peony, Vanilla Orchid, Jasmine & Musk. A fresh, fruity, and floral fragrance with a sweet, feminine, and elegant finish.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391765/BS_suoj6c.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786400049/bombshell_perfume_product_wazyvo.webp"
@@ -333,7 +353,7 @@ const products = [
         id: 20,
         category: "women",
         categoryLabel: "women",
-        name: "GUCCI FLORA",
+        name: "INSPIRED BY GUCCI FLORA",
         description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391486/night_floral_garden_rakhn7.webp",
@@ -349,7 +369,7 @@ const products = [
         id: 21,
         category: "women",
         categoryLabel: "women",
-        name: "OFFICE FOR WOMEN",
+        name: "INSPIRED BY OFFICE FOR WOMEN",
         description: "Fruity, floral, and fresh citrus notes come together in perfect harmony. A vibrant fragrance that feels crisp, uplifting, and effortlessly refreshing. Perfect for adding a touch of freshness and elegance to every moment.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786392017/ofw_gdj283.webp",
@@ -364,11 +384,26 @@ const products = [
         id: 22,
         category: "women",
         categoryLabel: "women",
-        name: "MY BURBERRY",
+        name: "INSPIRED BY MY BURBERRY",
         description: "A sophisticated floral fragrance with fresh sweet pea and bergamot, softened by elegant rose and a warm, earthy base. Chic, graceful, and timeless, perfect for adding a refined touch to everyday wear.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786391901/my_byr_azb5lr.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786400247/perfume_product_my_burberry_kv57ok.webp"
+        ],
+        price50ml: "1,300.00",
+        price100ml: "2,500.00",
+        rating: 5.0,
+        reviewsCount: 0
+    },
+    {
+        id: 23,
+        category: "women",
+        categoryLabel: "women",
+        name: "INSPIRED BY VALENTINO",
+        description: "Bergamot, Black Pepper, Coffee, Jasmine, Leather & Vanilla. A warm, modern, and sophisticated fragrance with a smooth and elegant finish.",
+        images: [
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786569953/perfume_bottle_centered_1_xstczs.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786570348/valentino_fragrance_scene_2_iuldjj.webp"
         ],
         price50ml: "1,300.00",
         price100ml: "2,500.00",
