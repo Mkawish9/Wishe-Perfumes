@@ -7,9 +7,11 @@ const products = [
         categoryLabel: "men",
         name: "Nuit de Oud",
         description: "A luxurious fusion of dark oud, velvety rose, and rich saffron, wrapped in smoky incense and resinous woods for a bold, mysterious, and unforgettable presence.",
+    
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786646711/Screenshot_2026-08-13_234706_najown.png"
         ],
         price50ml: "1,800.00",
         price100ml: "3,000.00",
@@ -25,7 +27,8 @@ const products = [
         description: "A fresh blend of bergamot and ambroxan unfolds into soft florals, settling over warm woods, musk, and patchouli for a clean, modern, and confident finish.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462807/neon_fragrance_set_d4mx9n.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462807/neon_fragrance_set_d4mx9n.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649259/Screenshot_2026-08-14_002939_fadszz.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -41,7 +44,8 @@ const products = [
         description: "A creamy bouquet of jasmine, velvety tuberose, and delicate Rangoon Creeper, creating a soft floral scent that is elegant, fresh, and irresistibly feminine.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784457/Starry_Time_aulaux.png",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462991/starry_times_neon_lrxmvy.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462991/starry_times_neon_lrxmvy.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648877/Screenshot_2026-08-14_002138_igzwqe.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
@@ -57,7 +61,8 @@ const products = [
         description: "A fresh fusion of sweet orange, crisp apple, and aromatic herbs, layered with lavender, juniper, patchouli, and amber for a clean, sensual, and confidently masculine signature.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784672/Flora_q8e6l7.png",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463101/flora_silk_neon_shot_hyzmnk.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463101/flora_silk_neon_shot_hyzmnk.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648369/Screenshot_2026-08-14_001452_ejuwsk.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
@@ -73,7 +78,8 @@ const products = [
         description: "A fresh fusion of grapefruit, rosemary, and cardamom, blended with smooth cedarwood and suede for a timeless, masculine, and effortlessly sophisticated scent.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Asset_9_nu9amu.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463253/wishe_asset9_fragrance_i0e3qj.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463253/wishe_asset9_fragrance_i0e3qj.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648207/Screenshot_2026-08-14_001152_nu9kvw.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -89,7 +95,8 @@ const products = [
         description: "A fresh, woody, and citrusy fragrance that delivers all-day confidence with a clean, sophisticated finish. Perfect for the modern man who wants to stay sharp, professional, and unforgettable.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571184/perfume_neon_green_blue_cmyenp.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463487/luxury_neon_product_set_yohade.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463487/luxury_neon_product_set_yohade.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649760/Screenshot_2026-08-14_003604_ixhuk7.png",
         ],
         price50ml: "1,600.00",
         price100ml: "2,500.00",
@@ -105,7 +112,8 @@ const products = [
         description: "A vibrant blend of citrus, apple blossom, and fresh wildflowers, softened by mint and clean woody notes for a youthful, refreshing, and effortlessly elegant scent.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784447/Tommy_ngvysr.png",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463647/tommy_cherie_neon_1_qvqh1k.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463647/tommy_cherie_neon_1_qvqh1k.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649996/Screenshot_2026-08-14_004152_hzzk9j.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -121,7 +129,8 @@ const products = [
         description: "A rich fusion of saffron, cardamom, candied dates, and burnt caramel, blended with dark oud, leather, cacao, and Madagascar vanilla for a luxurious, seductive, and unforgettable aroma.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Nightshade_Pulse_n99ejn.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463766/nightshade_pulse_neon_wg70qx.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463766/nightshade_pulse_neon_wg70qx.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786651229/Screenshot_2026-08-14_010231_mpd3pi.png",
         ],
         price50ml: "1,700.00",
         price100ml: "3,000.00",
@@ -150,10 +159,11 @@ const products = [
         category: "wishe-original",
         categoryLabel: "unisex",
         name: "GOLDEN HOUR",
-        description: "A captivating blend of fresh citrus, elegant florals, and rich woody notes. Crafted to create a smooth, long-lasting fragrance that leaves a memorable impression. Sophisticated, timeless, and perfect for every occasion.",
+        description: "A captivating blend of fresh citrus, elegant florals, and rich woods for a smooth, sophisticated, and long-lasting fragrance. Perfect for a timeless and memorable impression.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571603/golden_hour_perfume_1_zw1glf.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463967/golden_hour_set_yqkndo.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463967/golden_hour_set_yqkndo.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786651511/Screenshot_2026-08-14_010716_r6r8jq.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -166,7 +176,7 @@ const products = [
         category: "wishe-original",
         categoryLabel: "women",
         name: "Chrystal Breeze",
-        description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and crisp icy notes. Soft peony, lotus, and magnolia create a delicate floral heart, while musk, mahogany, and amber leave a warm, lasting finish. Fresh, elegant, and perfect for everyday luxury.",
+        description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and delicate florals, softened by icy notes and warm musk for a fresh, elegant, and effortlessly luxurious finish.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571951/perfume_prism_silk_be8yrs.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786464264/crystal_breeze_prism_flatlay_idb6ew.webp"
@@ -373,7 +383,7 @@ const products = [
         description: "Saffron, Jasmine, Amberwood, Ambergris & Cedarwood. A luxurious, warm, and airy fragrance with a sweet woody touch and long-lasting finish.",
         images: [
            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786573869/perfume_bottle_centered_5_ld3lw6.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786574648/Screenshot_2026-08-13_034604_fkt30a.png"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786574648/Screenshot_2026-08-13_034604_fkt30a.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
