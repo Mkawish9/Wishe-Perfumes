@@ -11,7 +11,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786646711/Screenshot_2026-08-13_234706_najown.png"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786653335/Screenshot_2026-08-14_013713_k6bhd5.png"
         ],
         price50ml: "1,800.00",
         price100ml: "3,000.00",
@@ -28,7 +28,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462807/neon_fragrance_set_d4mx9n.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649259/Screenshot_2026-08-14_002939_fadszz.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786653638/Screenshot_2026-08-14_014151_zntpcv.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -45,7 +45,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784457/Starry_Time_aulaux.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462991/starry_times_neon_lrxmvy.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648877/Screenshot_2026-08-14_002138_igzwqe.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786654233/Screenshot_2026-08-14_015232_blrwh7.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
