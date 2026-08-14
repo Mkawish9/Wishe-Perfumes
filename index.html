@@ -45,13 +45,10 @@
         </div>
     </nav>
 
-    <!-- Sesky Style Hero Section with Perfume Image -->
+    <!-- Hero Section -->
     <section class="sesky-hero">
         <div class="sesky-hero-container">
-            <!-- <h1 class="sesky-title">WISHÉ PRIME <span>14</span></h1> -->
-            <div class="sesky-hero-image">
-                <!-- <img src="https://res.cloudinary.com/awgrxf0m/image/upload/v1786479766/perfume_studio_hero_r2jtpi.webp" alt="Wishé Prime Collection"> -->
-            </div>
+            <div class="sesky-hero-image"></div>
         </div>
     </section>
 
@@ -60,10 +57,16 @@
         <div class="section-header">
             <br>
         </div>
-        <!-- Product Grid -->
+        <!-- Product Grid (Multiple Products / Images for Mobile & Desktop) -->
         <div class="product-grid" id="productGrid">
             <!-- Dynamic Products from JavaScript -->
         </div>
+    </div>
+
+    <!-- Image Lightbox Modal Pop-up for Mobile & Desktop -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="expandedImg" alt="Enlarged Fragrance View">
     </div>
 
     <!-- Cart Sidebar Drawer -->
