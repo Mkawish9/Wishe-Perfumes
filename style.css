@@ -1,5 +1,5 @@
 /* ==========================================
-   GLOBAL STYLES & CLEAN WHITE-BLACK THEME
+    GLOBAL STYLES & CLEAN WHITE-BLACK THEME
    ========================================== */
 :root {
     --bg-primary: #ffffff;      /* Pure Clean White Background */
@@ -27,7 +27,7 @@ body {
 }
 
 /* ==========================================
-   NAVBAR STYLES (Clean White Sticky)
+    NAVBAR STYLES (Clean White Sticky)
    ========================================== */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
@@ -56,7 +56,7 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     color: var(--text-main);
-    text-transform:;
+    text-transform: uppercase;
     transition: opacity 0.3s;
 }
 
@@ -168,10 +168,9 @@ body {
 }
 
 /* ==========================================
-   HERO SECTION
+    HERO SECTION
    ========================================== */
 .hero-section {
-    /* background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.98)), url(https://res.cloudinary.com/awgrxf0m/image/upload/v1786479766/perfume_studio_hero_r2jtpi.webp) center/cover no-repeat; */
     color: var(--text-main);
     text-align: center;
     padding: 90px 20px;
@@ -202,7 +201,7 @@ body {
 }
 
 /* ==========================================
-   PRODUCT CONTAINER & CARDS
+    PRODUCT CONTAINER & CARDS
    ========================================== */
 .container {
     max-width: 1300px;
@@ -278,10 +277,10 @@ body {
 }
 
 .product-title {
-    font-size: 1.rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 5px;
-    color: var(#000000);
+    color: #000000;
     letter-spacing: 0.5px;
 }
 
@@ -368,7 +367,7 @@ body {
 }
 
 /* ==========================================
-   CART SIDEBAR DRAWER
+    CART SIDEBAR DRAWER
    ========================================== */
 .cart-sidebar {
     position: fixed;
@@ -477,7 +476,7 @@ body {
 }
 
 /* ==========================================
-   ABOUT & CONTACT SECTIONS
+    ABOUT & CONTACT SECTIONS
    ========================================== */
 #about {
     background-color: var(--bg-secondary);
@@ -635,10 +634,7 @@ footer {
 }
 
 /* ==========================================
-   RESPONSIVE MEDIA QUERIES & HAMBURGER
-   ========================================== */
-/* ==========================================
-   RESPONSIVE MEDIA QUERIES & HAMBURGER
+    RESPONSIVE MEDIA QUERIES & HAMBURGER (SIDE DRAWER)
    ========================================== */
 .hamburger {
     display: none;
@@ -672,8 +668,8 @@ footer {
         top: 0;
         flex-direction: column;
         background-color: var(--bg-primary);
-        width: 280px; /* Side drawer ki width */
-        height: 100vh; /* Screen ki puri height */
+        width: 280px;
+        height: 100vh;
         text-align: left;
         transition: 0.3s ease-in-out;
         box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
@@ -683,31 +679,7 @@ footer {
         gap: 20px;
         z-index: 999;
         align-items: flex-start;
-    }
-
-    .nav-menu.active {
-        left: 0; /* Click karne par left side se bahir aa jaye ga */
-    }
-
-    .nav-search-box {
-        display: none;
-    }
-}
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--bg-primary);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s ease-in-out;
-        box-shadow: 0 10px 15px rgba(10, 9, 9, 0.05);
-        border-bottom: 1px solid var(--border-color);
-        padding: 20px 0;
-        gap: 15px;
-        z-index: 999;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -717,25 +689,21 @@ footer {
     .nav-search-box {
         display: none;
     }
+}
+
 @media(max-width: 650px) {
     .product-grid {
-        grid-template-columns: 1fr; /* Mobile par sirf aik column show hoga */
+        grid-template-columns: 1fr; /* Mobile par aik waqt mein sirf aik product */
         justify-items: center;
     }
     .product-card {
-        max-width: 100%; /* Card mukammal width lega taake aik row mein aik hi product aaye */
+        max-width: 100%;
     }
     .nav-container {
         flex-direction: column;
         align-items: center;
         gap: 12px;
         text-align: center;
-    }
-    .nav-menu {
-        justify-content: center;
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 5px;
     }
     .hero-content h2 {
         font-size: 1.8rem;
@@ -745,14 +713,12 @@ footer {
     }
 }
 
-
-
 /* ==========================================
-   SESKY STYLE WHITE HERO BANNER (GAP ADJUSTED)
+    SESKY STYLE WHITE HERO BANNER
    ========================================== */
 .wishe-banner {
     width: 100%;
-    height: 100x; /* Yahan se aap banner ki height mazeed kam ya zyada kar sakte hain */
+    height: 200px;
     background-image: url('https://res.cloudinary.com/awgrxf0m/image/upload/v1786483343/luxury_perfume_banner_nkgz4n.webp');
     background-size: cover; 
     background-position: center center;
@@ -763,21 +729,21 @@ footer {
     justify-content: center;
     padding-top: 0;
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 15px; /* Navbar aur banner ke darmiyan gap control karne ke liye */
+    margin-bottom: 15px;
 }
 
 .wishe-banner .banner-content {
-    max-width: 100px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
 
 .banner-content h2 {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
     color: #111111;
     position: relative;
     z-index: 2;
@@ -790,10 +756,9 @@ footer {
     color: #666666;
 }
 
-/* Mobile Screens ke liye adjustments */
 @media (max-width: 768px) {
     .wishe-banner {
-        height: 180px; /* Mobile par height */
+        height: 180px;
         background-size: contain; 
     }
     .banner-content h2 {
@@ -803,35 +768,38 @@ footer {
 
 @media (max-width: 480px) {
     .wishe-banner {
-        height: 150px; /* Chote mobile phones ke liye height */
+        height: 150px;
     }
     .banner-content h2 {
         font-size: 1.1rem;
     }
 }
-/* Image par click effect ke liye cursor pointer */
+
+/* ==========================================
+    IMAGE LIGHTBOX POP-UP MODAL STYLES
+   ========================================== */
 .popup-trigger {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .popup-trigger:active {
     transform: scale(0.98);
 }
 
-/* Modal Background */
 .image-modal {
-    display: none; /* Pehle hide rahega */
+    display: none;
     position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.9);
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; /* Smooth open/close fade */
+    transition: opacity 0.3s ease-in-out;
 }
 
 .image-modal.show {
@@ -839,7 +807,6 @@ footer {
     opacity: 1;
 }
 
-/* Modal ke andar ki image */
 .modal-content {
     max-width: 90%;
     max-height: 85vh;
@@ -850,10 +817,9 @@ footer {
 }
 
 .image-modal.show .modal-content {
-    transform: scale(1); /* Smooth zoom-in effect */
+    transform: scale(1);
 }
 
-/* Close Button (X) */
 .close-modal {
     position: absolute;
     top: 20px;
