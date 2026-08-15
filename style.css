@@ -637,6 +637,9 @@ footer {
 /* ==========================================
    RESPONSIVE MEDIA QUERIES & HAMBURGER
    ========================================== */
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES & HAMBURGER
+   ========================================== */
 .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -662,6 +665,34 @@ footer {
     .hamburger {
         display: block;
     }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: var(--bg-primary);
+        width: 280px; /* Side drawer ki width */
+        height: 100vh; /* Screen ki puri height */
+        text-align: left;
+        transition: 0.3s ease-in-out;
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid var(--border-color);
+        border-bottom: none;
+        padding: 80px 25px 20px 25px;
+        gap: 20px;
+        z-index: 999;
+        align-items: flex-start;
+    }
+
+    .nav-menu.active {
+        left: 0; /* Click karne par left side se bahir aa jaye ga */
+    }
+
+    .nav-search-box {
+        display: none;
+    }
+},
 
     .nav-menu {
         position: fixed;
