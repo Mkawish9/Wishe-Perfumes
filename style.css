@@ -692,7 +692,7 @@ footer {
     .nav-search-box {
         display: none;
     }
-},
+}
 
     .nav-menu {
         position: fixed;
@@ -717,15 +717,13 @@ footer {
     .nav-search-box {
         display: none;
     }
-}
-
 @media(max-width: 650px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Mobile par sirf aik column show hoga */
         justify-items: center;
     }
     .product-card {
-        max-width: 100
+        max-width: 100%; /* Card mukammal width lega taake aik row mein aik hi product aaye */
     }
     .nav-container {
         flex-direction: column;
@@ -746,6 +744,8 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+
 
 /* ==========================================
    SESKY STYLE WHITE HERO BANNER (GAP ADJUSTED)
@@ -808,7 +808,7 @@ footer {
     .banner-content h2 {
         font-size: 1.1rem;
     }
-},
+}
 /* Image par click effect ke liye cursor pointer */
 .popup-trigger {
     cursor: pointer;
