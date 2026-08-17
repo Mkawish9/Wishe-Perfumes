@@ -11,7 +11,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786653335/Screenshot_2026-08-14_013713_k6bhd5.png"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786975947/Screenshot_2026-08-17_191413_ecf3ya.png"
         ],
         price50ml: "1,800.00",
         price100ml: "3,000.00",
@@ -28,7 +28,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785785759/Elite_p9fxm5.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462807/neon_fragrance_set_d4mx9n.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786653638/Screenshot_2026-08-14_014151_zntpcv.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786979086/Screenshot_2026-08-17_200646_vxfwso.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -45,7 +45,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784457/Starry_Time_aulaux.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462991/starry_times_neon_lrxmvy.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786654233/Screenshot_2026-08-14_015232_blrwh7.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786980120/Screenshot_2026-08-17_202315_wpuwz5.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
@@ -62,7 +62,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784672/Flora_q8e6l7.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463101/flora_silk_neon_shot_hyzmnk.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648369/Screenshot_2026-08-14_001452_ejuwsk.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786979675/Screenshot_2026-08-17_201624_tul8fc.png",
         ],
         price50ml: "1,500.00",
         price100ml: "2,500.00",
@@ -79,7 +79,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Asset_9_nu9amu.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463253/wishe_asset9_fragrance_i0e3qj.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786648207/Screenshot_2026-08-14_001152_nu9kvw.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786978865/Screenshot_2026-08-17_200307_x0dnoz.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -96,7 +96,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571184/perfume_neon_green_blue_cmyenp.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463487/luxury_neon_product_set_yohade.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649760/Screenshot_2026-08-14_003604_ixhuk7.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786978758/Screenshot_2026-08-17_200123_xlxpic.png",
         ],
         price50ml: "1,600.00",
         price100ml: "2,500.00",
@@ -113,7 +113,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785784447/Tommy_ngvysr.png",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463647/tommy_cherie_neon_1_qvqh1k.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786649996/Screenshot_2026-08-14_004152_hzzk9j.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786978357/Screenshot_2026-08-17_195423_rid7an.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -130,7 +130,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Nightshade_Pulse_n99ejn.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463766/nightshade_pulse_neon_wg70qx.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786651229/Screenshot_2026-08-14_010231_mpd3pi.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786978487/Screenshot_2026-08-17_195652_utvjp0.png",
         ],
         price50ml: "1,700.00",
         price100ml: "3,000.00",
@@ -163,7 +163,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571603/golden_hour_perfume_1_zw1glf.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463967/golden_hour_set_yqkndo.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786651511/Screenshot_2026-08-14_010716_r6r8jq.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786980550/Screenshot_2026-08-17_203115_iznrke.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -179,7 +179,8 @@ const products = [
         description: "A refreshing blend of sparkling pomegranate, juicy yuzu, and delicate florals, softened by icy notes and warm musk for a fresh, elegant, and effortlessly luxurious finish.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786571951/perfume_prism_silk_be8yrs.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786464264/crystal_breeze_prism_flatlay_idb6ew.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786464264/crystal_breeze_prism_flatlay_idb6ew.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786975732/Screenshot_2026-08-17_190915_hsxcwm.png",
         ],
         price50ml: "1,400.00",
         price100ml: "2,500.00",
@@ -195,7 +196,8 @@ const products = [
         description: "A refined blend of sparkling citrus, fresh ginger, and neroli, resting on smoky black tea and smooth ambroxan for a clean, luxurious, and effortlessly elegant finish.",
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595311/Pure_Imagination_b9ulpt.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463862/luxury_prism_perfume_set_yheapy.webp"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786463862/luxury_prism_perfume_set_yheapy.webp",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786975486/Screenshot_2026-08-17_190635_zeoyej.png"
         ],
         price50ml: "1,600.00",
         price100ml: "2,500.00",
