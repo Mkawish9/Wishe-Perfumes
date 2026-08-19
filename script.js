@@ -13,12 +13,31 @@ const products = [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786975947/Screenshot_2026-08-17_191413_ecf3ya.png"
         ],
-        price50ml: "1,800.00",
-        price100ml: "3,000.00",
+        price50ml: "1,600.00",
+        price100ml: "2,500.00",
         rating: 5.0,
         reviewsCount: 2,
         userReviews: ["Amazing longevity!", "Pure luxury in a bottle."]
     },
+    {
+        id: 29,
+        category: "wishe-original",
+        categoryLabel: "men",
+        name: "HAVEN ICE",
+        description: "A fresh blend of sparkling pomegranate, juicy yuzu, and delicate florals with a cool, icy touch. Warm musk adds a smooth, elegant finish for an effortlessly luxurious scent.",
+    
+        images: [
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1787175230/Screenshot_2026-08-20_023550_t5urrl.png",
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1787175755/Screenshot_2026-08-20_024433_ihz0sz.png",
+            // "https://res.cloudinary.com/awgrxf0m/image/upload/v1787175293/Screenshot_2026-08-20_023659_lzm7wx.png",
+        ],
+        price50ml: "1,600.00",
+        price100ml: "2,500.00",
+        rating: 5.0,
+        reviewsCount: 2,
+        userReviews: ["I received my parcel and I am obsessed with the quality and long lasting timing will defenaitly order again please keep your quality same or can much better but don’t get down your stander 👍🏻", "At this price, fragrance is nice."]
+    },
+
     {
         id: 2,
         category: "wishe-original",
