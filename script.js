@@ -11,7 +11,7 @@ const products = [
         images: [
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1785595312/Nuit_de_Oud_kxyfgr.webp",
             "https://res.cloudinary.com/awgrxf0m/image/upload/v1786462537/wishe_nuit_de_oud_set_nedshd.webp",
-            "https://res.cloudinary.com/awgrxf0m/image/upload/v1786975947/Screenshot_2026-08-17_191413_ecf3ya.png"
+            "https://res.cloudinary.com/awgrxf0m/image/upload/v1787327886/vibrant_perfume_pyramid_plquvc.webp"
         ],
         price50ml: "1,600.00",
         price100ml: "2,500.00",
